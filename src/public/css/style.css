@@ -380,11 +380,11 @@
     
 }
 
-.modal-container .modal-img{
-    /* position: relative;
+/* .modal-container .modal-img{
+    position: relative;
     width: 100%;
-    height: auto; */
-}
+    height: auto;
+} */
 
 .modal-container .modal-slide-buttons{
     cursor:pointer;
@@ -407,12 +407,12 @@
 }
 
 
-.modal-container .modal-slide-buttons .btn-exit i{
+/* .modal-container .modal-slide-buttons .btn-exit i{
     
     
     
     
-}
+} */
 .modal-container  .modal-slide-buttons .btn-avance{
     position: absolute;
     top:50%;
@@ -452,10 +452,10 @@
 
 /* STAR RATING */
 
-.item{
+/* .item{
     
     
-}
+} */
 
 .info{
     padding:10px;
