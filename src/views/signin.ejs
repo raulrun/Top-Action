@@ -1,0 +1,18 @@
+<%- include('./partials/head') %>
+<body>
+    <%- include('./partials/nav') %>
+
+    <%- include('./partials/message') %>
+    
+    <div class="container-log-card">   
+        <form action="/signin" class="log-card" method="POST">
+            <h2>Iniciar sesión</h2>
+            <label class="card-label">Introduce una dirección de correo electrónico</label>
+            <input class="card-input" id="1"  type="email" name="email" placeholder="">
+            <label class="card-label">Introduce una contraseña</label>
+            <input class="card-input" type="password" name="password" placeholder="">
+            <button class="card-button" type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+</body>
+</html>

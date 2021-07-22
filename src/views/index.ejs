@@ -1,0 +1,82 @@
+<%- include('./partials/head') %>
+<body>
+    <%- include('./partials/nav') %>
+    <section>
+        <div class="container-parallax">
+            
+            <img src="/images/bg.jpg" id="bg">
+            
+            <img src="/images/isla1.png" id="isla1">
+            <h1 id="title">TOP ACTION</h1>
+            <img src="/images/isla2.png" id="isla2">
+        </div>
+    </section>
+    <section>
+        <div class="container-card">
+            <div class="card">
+                <a class="" href="/calas" >
+                    <div class="card-head">
+                        <img src="/images/cala.jpg">
+                        <div class="card-text">
+                            <h2>CALAS</h2>
+                        </div>
+                    </div>
+                    <p> No hay nada como estar en un tramo de bahía por donde penetra el mar con sus aguas tranquilas y cristalinas
+                    </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a class="" href="/rios">
+                    <div class="card-head">
+                        <img src="/images/rio.jpg">
+                        <div class="card-text">
+                            <h2>RIOS</h2>
+                        </div>
+                    </div>
+                </a>
+                <p>Ambiente de paz rodeado de vegetación para disfrutar de estas aguas frías y refrescantes
+                </p>
+            </div>
+        </div>
+        </section>
+        
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger:{
+                scrub:1
+            }, 
+            scale:
+            3.1
+        })
+        gsap.to("#title",{
+            scrollTrigger:{
+                scrub:1
+            }, 
+            y:150,
+        })
+
+        gsap.to("#isla1",{
+            scrollTrigger:{
+                scrub:1
+            }, 
+            x:500,
+            
+        })
+
+        gsap.to("#isla2",{
+            scrollTrigger:{
+                scrub:1
+            }, 
+            x:-270,
+        })
+    </script>
+
+
+</body>
+</html>
