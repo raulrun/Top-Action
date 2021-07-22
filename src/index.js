@@ -16,7 +16,14 @@ server.set('views',path.join(__dirname,'views'));
 server.engine('ejs',engine);
 server.set('view engine','ejs');
 
-server.set('port',process.env.Port || 3000);
+
+
+
+
+// server.set('port',process.env.Port || 3000);
+
+
+
 
 
 //middlewares
@@ -48,6 +55,11 @@ server.use(express.static(path.join(__dirname,'public')))
 
 //starting server
 
-server.listen(server.get('port'),()=>{
-    console.log('server on port ',server.get('port'));
-});
+server.listen((process.env.PORT || 3000), function(){
+    console.log('server on port *:3000');
+  });
+
+
+// server.listen(server.get('port'),()=>{
+//     console.log('server on port ',server.get('port'));
+// });
