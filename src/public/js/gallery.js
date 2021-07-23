@@ -1,6 +1,24 @@
 // const { model } = require("mongoose");
 
 
+//EXTENSIVE NAV
+const navBars = document.querySelector(".nav-bars");
+const navPages = document.querySelector(".nav-pages");
+
+navBars.addEventListener('click',()=>{
+  navPages.classList.toggle('active');
+  console.log(navBars.firstChild.classList);
+  if (navPages.classList == 'nav-pages active'){
+    navBars.firstChild.classList.replace("fa-bars","fa-times");
+  }
+  else{
+    navBars.firstChild.classList.replace("fa-times","fa-bars");
+  }
+  
+})
+
+
+
 
 //GALLERY
 const modalImg = document.querySelector(".image");
