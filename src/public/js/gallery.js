@@ -20,18 +20,18 @@ navBars.addEventListener('click',()=>{
 
 
 
-//GALLERY
-const modalImg = document.querySelector(".image");
-const modalContainer = document.querySelector(".modal-container");
-const modalExitButton = document.querySelector(".modal-exit-button");
+// GALLERY
+// const modalImg = document.querySelector(".image");
+// const modalContainer = document.querySelector(".modal-container");
+// const modalExitButton = document.querySelector(".modal-exit-button");
 
-modalImg.addEventListener('click',()=>{
-    modalContainer.parentNode.classList.add('active');
-})
+// modalImg.addEventListener('click',()=>{
+//     modalContainer.parentNode.classList.add('active');
+// })
 
-modalExitButton.addEventListener('click',()=>{
-  modalContainer.parentNode.classList.remove('active');
-})
+// modalExitButton.addEventListener('click',()=>{
+//   modalContainer.parentNode.classList.remove('active');
+// })
 
 
 
@@ -71,14 +71,6 @@ function getStars(rating) {
 
 
 
-
-
-
-
-
-
-
-// SLIDE GALLERY
 
 // get our elements
 // const slider = document.querySelector('.slider-container'),

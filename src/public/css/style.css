@@ -5,9 +5,14 @@
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
 }
+html{
+    position: relative;
+        height: 100%;
+}
 
 body{
     overflow-y:hidden;
+    
 }
 
  /* STYLE NAV */
@@ -318,7 +323,7 @@ body{
 .container-info-places{
     /* width: 100vw;
     height: 1000px; */
-    margin:-1px;
+    
     
     
     align-items: center;
@@ -335,13 +340,14 @@ body{
 
 .container-info .info-head{
     
-    
-    display: flex;
+    display:flex;
     align-items: center;
+    justify-content: center; 
+    
     flex-direction: column;
     padding: 20px;
     background: linear-gradient(to bottom, #213969,#557cda);
-     
+    
     
 }   
 .info-head .info-title{
@@ -364,6 +370,52 @@ body{
    
     
 /* SLIDER */
+.gallery-container{
+    position: relative;
+    width: 100%;
+   
+    
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+
+
+
+
+
+
 
 /* .container-slider{
     
@@ -524,9 +576,7 @@ body{
 
 
 /* STAR RATING */
-.star-valorations{
-    
-}
+
 .item{
     margin:-1px;
     
@@ -636,6 +686,10 @@ span{
         justify-content: center;
         background: none;
     }
+    .nav-link{
+
+        border-bottom:none;
+    }
     .container-title{
         
         justify-content: left;
@@ -648,6 +702,14 @@ span{
         
         display:none;
  }
+
+ /* SWIPE GALLERY */
+
+ .swiper-button-next, .swiper-button-prev{
+    display:none;
+    color: chartreuse;
+ }
+
  
  /* Tablets en horizonal y escritorios normales */
     
@@ -662,5 +724,3 @@ span{
  /* Escritorios muy anchos */
  
  @media (min-width: 1200px) { }
-
-
