@@ -4,6 +4,8 @@
     
     <%- include('./partials/nav') %>
     <section class="container-info-places">
+
+
         <div class="container-info">
             <div class="info-head">
     
@@ -21,8 +23,8 @@
                             
                             
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next swiper-buttons"></div>
+                        <div class="swiper-button-prev swiper-buttons"></div>
                         <div class="swiper-pagination"></div>
                     </div>
   
@@ -168,28 +170,54 @@
 
 <script src="/js/gallery.js"></script>
 <script src="https://kit.fontawesome.com/f85273b659.js" crossorigin="anonymous"></script>
+
+
+
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper", {
       cssMode: true,
+      allowTouchMove:true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+        
       },
       pagination: {
         el: ".swiper-pagination",
       },
       mousewheel: true,
       keyboard: true,
+      
+      
     });
+    const swiperButton = document.querySelectorAll(".swiper-buttons");
+
+    var mediaqueryList = window.matchMedia("(min-width: 768px)");
+    
+
+    if(!mediaqueryList.matches) {
+        console.log("imposible");
+        swiperButton.forEach (element=>{
+            element.classList.add("swiper-button-hidden","swiper-button-disabled","swiper-button-lock")
+        })
+        
+        
+        console.log(swiperButton.classList)
+    }
+
+    
   </script>
 
-
-
-
-    
-    
 </body>
 </html>

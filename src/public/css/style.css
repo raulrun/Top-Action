@@ -335,6 +335,9 @@ body{
     
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin:20px;
+    border-radius: 7px;
+    box-shadow: #aaa 5px 5px 20px ;
     
 }
 
@@ -365,6 +368,7 @@ body{
 .container-info .info-foot{
     background:#557cda;
     overflow-y: hidden;
+    
 }
     
    
@@ -379,13 +383,13 @@ body{
 .swiper-container {
     width: 100%;
     height: 100%;
+    
   }
-
+  
   .swiper-slide {
     text-align: center;
     font-size: 18px;
     
-
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -409,12 +413,31 @@ body{
     object-fit: contain;
   }
 
+:root{
+    --swiper-theme-color: rgb(34, 128, 250) !important;
+    
+}
 
+.swiper-button-next::after{
+    font-family: "FontAwesome" !important;
+    content:"\f138" !important;
+    font-size: 40px !important;
+     
+ }
 
+ .swiper-button-prev::after{
+    font-family: "FontAwesome" !important;
+    content:"\f137" !important;
+    font-size: 40px !important;
+    
+ }
 
+ 
 
-
-
+ .swiper-pagination{
+    --swiper-theme-color:rgb(0, 69, 197);
+    
+ }
 
 
 /* .container-slider{
@@ -532,6 +555,8 @@ body{
 }
 
 
+
+
 /* .modal-container .modal-slide-buttons .btn-exit i{
     
     
@@ -612,17 +637,17 @@ body{
 label:hover {
     cursor: pointer;
 }
+
+
 label {
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     z-index: 3;
     position: relative;
     background:#557cda;
     padding:20px;
-    
-    
-    
-    
+    border-top:1px solid #eee;
 }
 
 
@@ -673,7 +698,8 @@ span{
  
  /* Móviles en horizontal o tablets en vertical */
   
- @media (min-width: 768px) { 
+ @media (min-width: 768px ) { 
+
     /* NAV */
     .nav-pages{
         
@@ -704,11 +730,15 @@ span{
  }
 
  /* SWIPE GALLERY */
+ /* .swiper-button-next{
+     content:"" !important;
+     opacity: 0;
+ } */
 
- .swiper-button-next, .swiper-button-prev{
-    display:none;
-    color: chartreuse;
- }
+ /* .swiper-button-next::after, .swiper-button-prev::after{
+    content: "" !important;
+    
+} */
 
  
  /* Tablets en horizonal y escritorios normales */
