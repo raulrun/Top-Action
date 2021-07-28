@@ -12,7 +12,7 @@ html{
 
 body{
     overflow-y:hidden;
-    
+    background:#F3F3F3
 }
 
  /* STYLE NAV */
@@ -94,14 +94,97 @@ body{
     text-decoration: none;
     font-size: 20px;
     color:#fff;
-    
     border-bottom:1px solid #27302A;
     padding:10px 30px;
     overflow-y: hidden;
     z-index:205;
+    display: flex;
+    align-items: center;
     
 
 }
+
+.nav-link i{
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
+
+/* DROPDOWN NAV */
+
+
+.info-nav{
+    
+    background:#273746;
+}
+
+.info-nav .nav-link{
+    padding-left:60px;
+    display:block;
+}
+
+
+.item-nav .info-nav ,.item-nav input[type="checkbox"] {
+    display: none;
+}
+
+.item-nav input:checked ~ div {
+    display: block;
+}
+
+
+.item-nav input + .label-nav .arrow-nav {
+    transform: rotate(0deg)  translateY(4px);
+    
+    transition: 0.1s;
+}
+
+.item-nav input:checked + .label-nav .arrow-nav {
+    transform: rotate(90deg) translateX(7px) translateY(7px);
+    top:2px;
+    
+    transition: 0.1s;
+}
+
+
+.label-nav:hover {
+    cursor: pointer;
+}
+
+
+.label-nav {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    z-index: 3;
+    position: relative;
+    background:#273746;
+    font-size: 20px;
+    color:#fff;
+    border-bottom:1px solid #27302A;
+    padding:10px 30px;
+    overflow-y: hidden;
+    align-items: center;
+    
+}
+.label-nav i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.label-nav p{
+    align-self:center;
+}
+
+ .arrow-nav{
+    padding-right: 10px;
+    display: inline;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: 0;
+
+}
+
+
 
 
 
@@ -620,13 +703,13 @@ body{
 }
 
 
-.item input + label .arrow {
+.item input + .label-star .arrow {
     transform: rotate(0deg)  translateY(4px);
     
     transition: 0.1s;
 }
 
-.item input:checked + label .arrow {
+.item input:checked + .label-star .arrow {
     transform: rotate(90deg) translateX(7px) translateY(7px);
     
     top:2px;
@@ -634,12 +717,12 @@ body{
 }
 
 
-label:hover {
+.label-star:hover {
     cursor: pointer;
 }
 
 
-label {
+.label-star {
     box-sizing: border-box;
     width: 100%;
     display: flex;
@@ -666,7 +749,6 @@ span{
     
     margin-left:70px;
 }
-
 
 
 
@@ -753,4 +835,4 @@ span{
   
  /* Escritorios muy anchos */
  
- @media (min-width: 1200px) { }
+ @media (min-width: 1200px) { }}
