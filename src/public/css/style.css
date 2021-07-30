@@ -901,10 +901,6 @@ transform:scaleX(-1);
     z-index:1000;
 }
     
-}
-
-
-
 
 
 .container-qs h2{
@@ -926,6 +922,144 @@ transform:scaleX(-1);
     text-decoration: none;
     color:#000;
 }
+
+
+/* PRODUCTOS */
+.productos-card h1{
+    color:#333;
+    font-size: 40px;
+    text-align: center;
+}
+.productos-card{
+    align-items: center;
+    
+}
+
+
+.container-productos{
+    align-items: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));   
+    position:relative;
+    
+}
+.container-productos .spacing{
+    
+    height:100%;
+    overflow-y: hidden;
+    padding:20px 0px;
+   
+    
+}
+
+.card-productos{
+    display:flex;
+    flex-direction: column;
+    margin: 0px 5%;
+    background:#fff;
+    border-radius: 7px;
+    box-shadow: #333 5px 5px 10px ;
+    align-items: center;
+    border-top:8px solid #EDBF46;
+    height: 100%;
+    overflow-y:hidden;
+    
+}
+
+.card-productos .overflow-img{
+    
+    /* flex-basis: 50%; */
+    
+    overflow-y:hidden;
+    display:flex;
+    align-items: center;
+    
+}
+.card-productos .overflow-img a{
+    overflow-y: hidden;
+
+}
+.card-productos .overflow-img .producto-image{
+    
+    width:100%;
+    transition:0.5s;
+    object-fit: contain;
+    position:relative;
+    height: 300px;
+    
+    
+}
+.producto-image:hover {
+    transform: scale(1.5);
+    transition:transform 0.5s;
+    /* filter:blur(6px) brightness(50%); */
+    
+}
+.producto-img:before {
+    content:"";
+    position: absolute;
+    width:80px;
+    height:80px;
+    top:0;
+}
+
+.card-productos h3{
+    
+    text-align: right;
+    margin-right:auto;
+    padding:20px;
+    padding-bottom:0px;
+    color:#081422;
+    
+    
+
+}
+
+.card-productos h4{
+    padding:20px;
+    padding-bottom:0; 
+    margin-right:auto;  
+    color:#666;
+    flex-grow:2;
+    overflow-y: hidden;
+}
+.card-productos .precio{
+    padding:10px;
+    font-size: 35px;
+    color:rgb(219, 163, 21);
+    font-family: "teko";
+    overflow-y:hidden;
+    
+}
+
+.card-productos .button-comp-amaz{
+    background:#FFE454;
+    text-decoration: none;
+    color:#000;
+    width: fit-content;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-bottom:20px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    
+}
+
+.card-productos .button-comp-amaz:hover{
+    cursor:pointer;
+}
+
+.card-productos .icon-amazon{
+    width:30px;
+    margin-bottom:20px;
+    
+}
+
+
+
+
+
+
 
 /* RESPONSIVE  */
  
@@ -967,6 +1101,13 @@ transform:scaleX(-1);
  .info-map iframe{
     width:100%;
     height:calc(100vw / 3); 
+}
+
+/* PRODUCTOS */
+
+
+.card-productos{
+    height: 100%;
 }
 
  /* SWIPE GALLERY */

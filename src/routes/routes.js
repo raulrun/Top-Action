@@ -60,4 +60,8 @@ router.get('/rios',(req,res,next)=>{
     res.render('rios',{title:'Rios'});
 });
 
+router.get('/productos',(req,res,next)=>{
+    res.render('productos',{title:'Productos'});
+});
+
 module.exports = router;
