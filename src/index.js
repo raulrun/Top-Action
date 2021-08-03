@@ -13,8 +13,8 @@ require('./passport/local-auth');
 
 //settings
 server.set('views',path.join(__dirname,'views'));
-server.engine('ejs',engine);
-server.set('view engine','ejs');
+server.engine('html',engine);
+server.set('view engine','html');
 
 
 
